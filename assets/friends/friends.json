@@ -1,0 +1,30 @@
+[
+  {
+    "username": "alice-dev",
+    "name": "Alice Johnson",
+    "bio": "Full-stack developer passionate about React and Node.js",
+    "relationship": "Colleague",
+    "githubUrl": "https://github.com/alice-dev"
+  },
+  {
+    "username": "bob-coder",
+    "name": "Bob Smith",
+    "bio": "Backend engineer specializing in Python and databases",
+    "relationship": "Friend",
+    "githubUrl": "https://github.com/bob-coder"
+  },
+  {
+    "username": "charlie-ui",
+    "name": "Charlie Brown",
+    "bio": "UI/UX designer with a love for clean interfaces",
+    "relationship": "Mentor",
+    "githubUrl": "https://github.com/charlie-ui"
+  },
+  {
+    "username": "diana-mobile",
+    "name": "Diana Chen",
+    "bio": "Mobile app developer focused on iOS and React Native",
+    "relationship": "Teammate",
+    "githubUrl": "https://github.com/diana-mobile"
+  }
+] 
