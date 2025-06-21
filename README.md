@@ -127,7 +127,7 @@ on:
 生成的图片效果可以在以下位置查看：
 
 - **SVG 版本**: [assets/friends/generated/friends.svg](./assets/friends/generated/friends.svg)
-- **PNG 版本**: [assets/friends/generated/friends.png](./assets/friends/generated/friends.png)
+- **PNG 版本**: [assets/friends/generated/friends-layout.png](./assets/friends/generated/friends.png)
 
 ### 使用生成的图片
 你可以将生成的图片用于：
@@ -141,7 +141,7 @@ on:
 
 👥 我的好友圈
 
-![Friends Cards](./assets/friends/generated/friends.png)
+![Friends Cards](./assets/friends/generated/friends-layout.png)
 
 
 ## 📁 项目结构
