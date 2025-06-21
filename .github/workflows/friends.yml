@@ -16,19 +16,20 @@ jobs:
     runs-on: ubuntu-latest
     permissions:
       contents: write
+      pull-requests: write
     steps:
       - name: Checkout repository
         uses: actions/checkout@v4
         with:
           fetch-depth: 0
           token: ${{ secrets.GITHUB_TOKEN }}
-          ref: main
           
       # 创建必要的目录
       - name: Create required directories
         run: |
           mkdir -p assets/friends/avatars
           mkdir -p assets/friends/generated
+          ls -la assets/friends/
           
       # 安装系统依赖
       - name: Install system dependencies
@@ -49,10 +50,12 @@ jobs:
           
       # 安装依赖
       - name: Install dependencies
-        run: pnpm install --no-frozen-lockfile
+        run: |
+          pnpm install --no-frozen-lockfile
+          pnpm list
           
-      # 配置Git并拉取最新 main
-      - name: Configure Git and Pull Latest main
+      # 配置Git
+      - name: Configure Git
         run: |
           git config --global user.name "github-actions[bot]"
           git config --global user.email "github-actions[bot]@users.noreply.github.com"
@@ -60,13 +63,33 @@ jobs:
 
       # 生成朋友网络
       - name: Generate friends network
-        run: node src/friends/generate-friends.js
+        run: |
+          echo "Current directory: $(pwd)"
+          echo "Files in assets/friends/:"
+          ls -la assets/friends/
+          echo "Running generate script..."
+          node src/friends/generate-friends.js
+          echo "Script completed. Checking generated files:"
+          ls -la assets/friends/generated/ || echo "Generated directory is empty"
+          ls -la assets/friends/avatars/ || echo "Avatars directory is empty"
         env:
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
 
-      # 提交更改到 main 分支
-      - name: Commit and Push Changes to main
+      # 检查是否有文件变更
+      - name: Check for changes
         run: |
-          git add assets/friends/
-          git diff --quiet && git diff --staged --quiet || git commit -m "chore: update friends network"
-          git push origin main
+          git status
+          git diff --name-only
+          git add -A
+          git diff --cached --name-only
+
+      # 提交更改到 main 分支
+      - name: Commit and Push Changes
+        run: |
+          if git diff --cached --quiet; then
+            echo "No changes to commit"
+          else
+            git commit -m "chore: update friends network [skip ci]"
+            git push origin main
+            echo "Changes committed and pushed successfully"
+          fi

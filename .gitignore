@@ -75,9 +75,13 @@ assets/profile-3d/*
 !assets/profile-3d/.gitkeep
 
 ## Friends Network
-assets/friends/avatars/*
+# 允许生成的朋友网络文件被提交
+assets/friends/avatars/*.tmp
+assets/friends/avatars/*.temp
+assets/friends/generated/*.tmp
+assets/friends/generated/*.temp
+# 保留 .gitkeep 文件
 !assets/friends/avatars/.gitkeep
-assets/friends/generated/*
 !assets/friends/generated/.gitkeep
 
 # Test files
