@@ -113,9 +113,9 @@
         </rect>
 
         <!-- Card Content -->
-        <text x="20" y="40" class="card-text name">Alice Johnson</text>
-        <text x="20" y="65" class="card-text username">@alice-dev</text>
-        <text x="20" y="90" class="card-text bio">Full-stack developer passionate about React and Node.js</text>
+        <text x="20" y="40" class="card-text name">teapot1de</text>
+        <text x="20" y="65" class="card-text username">@ywh555hhh</text>
+        <text x="20" y="90" class="card-text bio">HPC enthusiast</text>
         
         <!-- Relationship Tag -->
         <rect
@@ -131,7 +131,7 @@
           y="36"
           class="card-text tag"
           text-anchor="middle"
-        >Colleague</text>
+        >Senior</text>
       </g>
     
       <g class="friend-card" transform="translate(440, 60)">
@@ -160,9 +160,9 @@
         </rect>
 
         <!-- Card Content -->
-        <text x="20" y="40" class="card-text name">Bob Smith</text>
-        <text x="20" y="65" class="card-text username">@bob-coder</text>
-        <text x="20" y="90" class="card-text bio">Backend engineer specializing in Python and databases</text>
+        <text x="20" y="40" class="card-text name">CAICAII</text>
+        <text x="20" y="65" class="card-text username">@CAICAIIs</text>
+        <text x="20" y="90" class="card-text bio">Open Source</text>
         
         <!-- Relationship Tag -->
         <rect
@@ -178,7 +178,7 @@
           y="36"
           class="card-text tag"
           text-anchor="middle"
-        >Friend</text>
+        >Fellow</text>
       </g>
     
       <g class="friend-card" transform="translate(60, 260)">
@@ -207,9 +207,9 @@
         </rect>
 
         <!-- Card Content -->
-        <text x="20" y="40" class="card-text name">Charlie Brown</text>
-        <text x="20" y="65" class="card-text username">@charlie-ui</text>
-        <text x="20" y="90" class="card-text bio">UI/UX designer with a love for clean interfaces</text>
+        <text x="20" y="40" class="card-text name">HakimYu</text>
+        <text x="20" y="65" class="card-text username">@HakimYu</text>
+        <text x="20" y="90" class="card-text bio">Keen Frontend</text>
         
         <!-- Relationship Tag -->
         <rect
@@ -225,7 +225,7 @@
           y="36"
           class="card-text tag"
           text-anchor="middle"
-        >Mentor</text>
+        >Fellow</text>
       </g>
     
       <g class="friend-card" transform="translate(440, 260)">
@@ -254,9 +254,9 @@
         </rect>
 
         <!-- Card Content -->
-        <text x="20" y="40" class="card-text name">Diana Chen</text>
-        <text x="20" y="65" class="card-text username">@diana-mobile</text>
-        <text x="20" y="90" class="card-text bio">Mobile app developer focused on iOS and React Native</text>
+        <text x="20" y="40" class="card-text name">Sun</text>
+        <text x="20" y="65" class="card-text username">@THINKER-ONLY</text>
+        <text x="20" y="90" class="card-text bio">Overall Developer</text>
         
         <!-- Relationship Tag -->
         <rect
@@ -272,7 +272,7 @@
           y="36"
           class="card-text tag"
           text-anchor="middle"
-        >Teammate</text>
+        >Fellow</text>
       </g>
     
     </svg>
