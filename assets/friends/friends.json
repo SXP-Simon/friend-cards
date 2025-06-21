@@ -1,30 +1,30 @@
 [
   {
-    "username": "alice-dev",
-    "name": "Alice Johnson",
-    "bio": "Full-stack developer passionate about React and Node.js",
-    "relationship": "Colleague",
-    "githubUrl": "https://github.com/alice-dev"
+    "username": "ywh555hhh",
+    "name": "teapot1de",
+    "bio": "HPC enthusiast",
+    "relationship": "Senior",
+    "githubUrl": "https://github.com/ywh555hhh"
   },
   {
-    "username": "bob-coder",
-    "name": "Bob Smith",
-    "bio": "Backend engineer specializing in Python and databases",
-    "relationship": "Friend",
-    "githubUrl": "https://github.com/bob-coder"
+    "username": "CAICAIIs",
+    "name": "CAICAII",
+    "bio": "Open Source",
+    "relationship": "Fellow",
+    "githubUrl": "https://github.com/CAICAIIs"
   },
   {
-    "username": "charlie-ui",
-    "name": "Charlie Brown",
-    "bio": "UI/UX designer with a love for clean interfaces",
-    "relationship": "Mentor",
-    "githubUrl": "https://github.com/charlie-ui"
+    "username": "HakimYu",
+    "name": "HakimYu",
+    "bio": "Keen Frontend",
+    "relationship": "Fellow",
+    "githubUrl": "https://github.com/HakimYu"
   },
   {
-    "username": "diana-mobile",
-    "name": "Diana Chen",
-    "bio": "Mobile app developer focused on iOS and React Native",
-    "relationship": "Teammate",
-    "githubUrl": "https://github.com/diana-mobile"
+    "username": "THINKER-ONLY",
+    "name": "Sun",
+    "bio": "Overall Developer",
+    "relationship": "Fellow",
+    "githubUrl": "https://github.com/THINKER-ONLY"
   }
 ] 
